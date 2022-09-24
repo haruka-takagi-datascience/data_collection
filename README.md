@@ -17,14 +17,16 @@ Then we will be scraping each url for the best answer at the top of the page.
 <img src="images/img_3.png">
 
 There are 4 scripts in this webscraping process.
-1. yahoo_webcrawl_1.py: collects urls from yahoo answer page search. With a maximum of 300 urls per search term.
 
+### yahoo_webcrawl_1.py
+This script collects urls from yahoo answer page search. With a maximum of 300 urls per search term.
 This script outputs a dataframe of seed_word, rank, url and word_id.
 <img src="images/img_4.png">
 
+### yahoo_webcrawl_2.py
+This script scrapes html files for saving from url list from yahoo_webcrawl_1.py
+This script outputs a folder of saved html files, as well as add a aws s3 file path location column to url_df.csv dataframe. 
 
-
-3. yahoo_webcrawl_2.py: Scrapes html files for saving from url list from yahoo_webcrawl_1.py
 4. yahoo_webcrawl_3.py: From each html file, extracts 
 
 
