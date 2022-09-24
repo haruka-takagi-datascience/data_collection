@@ -37,11 +37,16 @@ This script does the following processes in the order listed below.
 1. Cleans text (url_df_cleaned.csv)
 2. Segments text into sentence sequences (sequence_webcrawl_cleaned_df.csv)
 3. Creates nouns list for tf-idf (nouns_list_all.txt)
-4. Create term frequency for each noun over the same seed words. (tf_by_seed_df.csv)
-5. Create document frequency for each noun. (df_by_all.csv)
+4. Create term frequency for each noun over the same seed words (tf_by_seed_df.csv)
+5. Create document frequency for each noun (df_by_all.csv)
 6. Create idf (df_by_all.csv)
-7. Create tf_idf data frame by seed word for all nouns. (tf_idf_by_seed.csv)
+7. Create tf_idf data frame by seed word for all nouns (tf_idf_by_seed.csv)
 
 ## RESULTS
+### url_df_cleaned.csv
+<img src="images/img_6.png">
+ 
+### sequence_webcrawl_cleaned_df.csv
+<img src="images/img_7.png">
+ 
 
-dsfsdfsd
