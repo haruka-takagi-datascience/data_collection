@@ -44,9 +44,56 @@ This script does the following processes in the order listed below.
 
 ## RESULTS
 ### url_df_cleaned.csv
+This csv contains the url, rank, original text and cleaned text of yahoo answer websearch.
+- seed_word: seed word
+- rank: rank in yahoo search result
+- url: url of yahoo answers search
+- word_id : numerical id of seed word (detailed in word_df)
+- html_s3_url : s3 link to saved html of yahoo search results
+- text : string of scraped text from yahoo search results (includes the question and the best answer to question) (NOT CLEANED)
+- segmented_text : list of text segmented by sentence (CLEANED)
+- sequence_length : number of sentences in text (numerical)
+- segmented_text_joined : joined string of segmented_text (CLEANED)
 <img src="images/img_6.png">
  
+### word_df.csv
+This csv contains all the seed words and their respective word_id (total number of seed words: 101)
+- word : seed word
+- word_id : numerical id for seed word 
+<img src="images/img_12.png">
+
 ### sequence_webcrawl_cleaned_df.csv
+This csv ontains the url, rank, and cleaned sequence text of yahoo answer web search.
+- seed_word : seed word
+- rank : rank in yahoo search result
+- seq_sentence_n : nth sequence value
+- cleaned_segmented_text : cleaned text sequence by sentence
 <img src="images/img_7.png">
- 
+
+### nouns_list_all.txt
+List of all nouns in yahoo answer web search. (tokenized with Mecab)
+<img src="images/img_8.png">
+
+### tf_by_seed_df.csv
+This csv contains term frequency for all nouns by seed word.
+- seed_word : seed word
+- tf_by_seed(セーフガード) : セーフガード term frequency by seed word
+- tf_by_seed(ウォリアーズ) : ウォリアーズ term frequency by seed word
+- continues of all nouns in noun list
+<img src="images/img_9.png">
+
+### df_by_all.csv
+This csv contains document frequency and inverse document frequency (idf) for all nouns
+- words : all nouns in yahoo web search ( from nouns_list_all.txt)
+- document_frequency : number of appearances of nouns across all documents (documents = yahoo answers search results)
+- idf : inverse document frequency for all nouns across all documents (idf = log(N - n - 0.5)/(n + 0.5) for N = number of documents & n = df(noun)
+<img src="images/img_10.png">
+
+### tf_idf_by_seed.csv
+This csv contains tf_idf by seed for all nouns in yahoo web search
+- seed_word : seed word
+- セーフガード : tf_idf of noun ( セーフガード ) by seed word
+- ウォリアーズ: tf_idf of noun ( ウォリアーズ ) by seed word
+- continues of all nouns in noun list
+<img src="images/img_11.png">
 
