@@ -3,7 +3,7 @@
 To solve any business problem or research question using data science, the first step is to collect your data.
 Web scraping is the process of extracting and parsing data from websites in an automated fashion using a computer program.
 
-In this application of webscraping, I built a web scraper that collects the best answer to questions from yahoo answers based on a list of search terms. A webscraper like this can be used for several different uses, such as expanding the corpus of an automatic speech recognition model to take into account domain specific words. 
+In this application of webscraping, I built a web scraper that collects the question and best answer to questions from yahoo answers based on a list of search terms. A webscraper like this can be used for several different uses, such as expanding the corpus of an automatic speech recognition model to take into account domain specific words. 
 
 After the webscraping, to increase useability, I separated the yahoo answer observations by sentence segment. I then cleaned these segments of urls and other noise. I then calculated the term frequency, document frequency and term frequency - inverse document frequency values to prep the corpus for analysis. This webscraping script uses selenium, pandas, BeautifulSoup & MeCab (Japanese Morpholoical Analyzer).
 
@@ -27,19 +27,21 @@ This script outputs a dataframe of seed_word, rank, url and word_id.
 This script scrapes html files for saving from url list from yahoo_webcrawl_1.py
 This script outputs a folder of saved html files, as well as add a aws s3 file path location column to url_df.csv dataframe. 
 
-4. yahoo_webcrawl_3.py: From each html file, extracts 
+### yahoo_webcrawl_3.py
+This script extracts the question and best answer from each html file.
+This script outputs url_df.csv with a new added text column showing the scraped text. 
+ <img src="images/img_5.png">
 
-
-
-
-yahoo_webcrawl_1.py : collect urls from yahoo answer page search
-yahoo_webcrawl_2.py : from url list save the html files
-yahoo_webcrawl_3.py : extract question and best answer from html files
-yahoo_webcrawl_4.ipynb : Text cleaning & tf-idf producing script
+### yahoo_webcrawl_4.py
+This script does the following processes in the order listed below.
 1. Cleans text (url_df_cleaned.csv)
 2. Segments text into sentence sequences (sequence_webcrawl_cleaned_df.csv)
-3. Creates nouns (名詞) list for tf-idf (nouns_list_all.txt)
-4. Create term frequency for each noun over the same seed words (tf_by_seed_df.csv)
-5. Create document frequency for each noun (名詞) (df_by_all.csv)
+3. Creates nouns list for tf-idf (nouns_list_all.txt)
+4. Create term frequency for each noun over the same seed words. (tf_by_seed_df.csv)
+5. Create document frequency for each noun. (df_by_all.csv)
 6. Create idf (df_by_all.csv)
-7. Create tf_idf data frame by seed word for all nouns (名詞) (tf_idf_by_seed.csv)
+7. Create tf_idf data frame by seed word for all nouns. (tf_idf_by_seed.csv)
+
+## RESULTS
+
+dsfsdfsd
