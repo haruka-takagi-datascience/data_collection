@@ -8,14 +8,11 @@ In this application of webscraping, I built a web scraper that collects the best
 After the webscraping, to increase useability, I separated the yahoo answer observations by sentence segment. I then cleaned these segments of urls and other noise. I then calculated the term frequency, document frequency and term frequency - inverse document frequency values to prep the corpus for analysis.
 
 The yahoo answers website we will be scraping looks as such...
+<img src="images/img_1.png">
 
+Then we will be collecting the url links for 10 pages worth of search results.
+<img src="images/img_2.png">
 
+Then we will be scraping each url for the best answer at the top of the page. 
+<img src="images/img_3.png">
 
-yahoo_webcrawl_4.ipynb : Text cleaning & tf-idf producing script
-1. Cleans text (url_df_cleaned.csv)
-2. Segments text into sentence sequences (sequence_webcrawl_cleaned_df.csv)
-3. Creates nouns (名詞) list for tf-idf (nouns_list_all.txt)
-4. Create term frequency for each noun over the same seed words (tf_by_seed_df.csv)
-5. Create document frequency for each noun (名詞) (df_by_all.csv)
-6. Create idf (df_by_all.csv)
-7. Create tf_idf data frame by seed word for all nouns (名詞) (tf_idf_by_seed.csv)
