@@ -7,10 +7,10 @@ In this application of webscraping, I built a web scraper that collects the best
 
 After the webscraping, to increase useability, I separated the yahoo answer observations by sentence segment. I then cleaned these segments of urls and other noise. I then calculated the term frequency, document frequency and term frequency - inverse document frequency values to prep the corpus for analysis.
 
-The yahoo answers website we will be scraping looks as such...
+The yahoo answers website we will be scraping looks as such. Looping through the search terms, we will search the most relavent answers to each search term .
 <img src="images/img_1.png">
 
-Then we will be collecting the url links for 10 pages worth of search results.
+For each search term we will be collecting the url links for 10 pages worth of search results.
 <img src="images/img_2.png">
 
 Then we will be scraping each url for the best answer at the top of the page. 
