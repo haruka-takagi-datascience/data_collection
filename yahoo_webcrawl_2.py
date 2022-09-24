@@ -37,7 +37,7 @@ for i in range(len(url_df)):
 
 s3_links = []
 for i in range(len(url_df)):
-    s3_link = 's3://tmp.ap-northeast-1.206286158172/takagi/webcrawl_html_files/' + str(url_df['word_id'][i]) + '_' + str(url_df['rank'][i]) + '.html'
+    s3_link = 'AWS_S3_LOCATION' + str(url_df['word_id'][i]) + '_' + str(url_df['rank'][i]) + '.html'
     s3_links = s3_links + [s3_link]
 
 url_df['html_s3_url'] = s3_links
