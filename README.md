@@ -17,6 +17,7 @@ Then we will be scraping each url for the best answer at the top of the page.
 <img src="images/img_3.png">
 
 There are 4 scripts in this webscraping process.
+[To see the scripts please visit the github repository for this project.](https://github.com/haruka-takagi-datascience/yahoo_webscraper)
 
 ### yahoo_webcrawl_1.py
 This script collects urls from yahoo answer page search. With a maximum of 300 urls per search term.
