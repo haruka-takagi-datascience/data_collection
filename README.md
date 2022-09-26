@@ -98,3 +98,4 @@ This csv contains tf_idf by seed for all nouns in yahoo web search
 - continues of all nouns in noun list
 <img src="images/img_11.png">
 
+Thank you for reading!
