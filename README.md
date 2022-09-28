@@ -1,4 +1,4 @@
-# Building a Webscraper for Yahoo Answers
+# Building a Webscraper for Question & Answer Forum
 
 To solve any business problem or research question using data science, the first step is to collect your data.
 Web scraping is the process of extracting and parsing data from websites in an automated fashion using a computer program.
