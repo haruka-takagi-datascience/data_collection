@@ -57,12 +57,6 @@ This csv contains the url, rank, original text and cleaned text of yahoo answer 
 - segmented_text_joined : joined string of segmented_text (CLEANED)
 <img src="images/img_6.png">
  
-### word_df.csv
-This csv contains all the seed words and their respective word_id (total number of seed words: 101)
-- word : seed word
-- word_id : numerical id for seed word 
-<img src="images/img_12.png">
-
 ### sequence_webcrawl_cleaned_df.csv
 This csv ontains the url, rank, and cleaned sequence text of yahoo answer web search.
 - seed_word : seed word
