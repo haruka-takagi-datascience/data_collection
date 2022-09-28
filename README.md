@@ -50,7 +50,6 @@ This csv contains the url, rank, original text and cleaned text of yahoo answer 
 - rank: rank in yahoo search result
 - url: url of yahoo answers search
 - word_id : numerical id of seed word (detailed in word_df)
-- html_s3_url : s3 link to saved html of yahoo search results
 - text : string of scraped text from yahoo search results (includes the question and the best answer to question) (NOT CLEANED)
 - segmented_text : list of text segmented by sentence (CLEANED)
 - sequence_length : number of sentences in text (numerical)
