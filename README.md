@@ -26,7 +26,7 @@ This script outputs a dataframe of seed_word, rank, url and word_id.
 
 ### yahoo_webcrawl_2.py
 This script scrapes html files for saving from url list from yahoo_webcrawl_1.py
-This script outputs a folder of saved html files, as well as add a aws s3 file path location column to url_df.csv dataframe. 
+This script outputs a folder of saved html files.
 
 ### yahoo_webcrawl_3.py
 This script extracts the question and best answer from each html file.
