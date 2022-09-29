@@ -36,7 +36,7 @@ This script outputs a folder of saved html files.
 This script extracts the question and best answer from each html file.
 This script outputs url_df.csv with a new added text column showing the scraped text. <br />
 <br />
- <img src="images/img_5.png" width="90%" height="90%">
+ <img src="images/img_5.png" width="100%" height="100%">
 
 ### yahoo_webcrawl_4.py
 This script does the following processes in the order listed below.
