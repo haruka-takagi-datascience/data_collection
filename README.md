@@ -23,7 +23,7 @@ There are 4 scripts in this webscraping process.
 ### yahoo_webcrawl_1.py
 This script collects urls from yahoo answer page search. With a maximum of 300 urls per search term.
 This script outputs a dataframe of seed_word, rank, url and word_id.
-<img src="images/img_4.png" width="70%" height="70%">
+<img src="images/img_4.png" width="50%" height="50%">
 
 ### yahoo_webcrawl_2.py
 This script scrapes html files for saving from url list from yahoo_webcrawl_1.py
@@ -32,7 +32,7 @@ This script outputs a folder of saved html files.
 ### yahoo_webcrawl_3.py
 This script extracts the question and best answer from each html file.
 This script outputs url_df.csv with a new added text column showing the scraped text. 
- <img src="images/img_5.png">
+ <img src="images/img_5.png" width="50%" height="50%">
 
 ### yahoo_webcrawl_4.py
 This script does the following processes in the order listed below.
