@@ -7,14 +7,15 @@ In this application of webscraping, I built a web scraper that collects the ques
 
 After the webscraping, to increase useability, I separated the yahoo answer observations by sentence segment. I then cleaned these segments of urls and other noise. I then calculated the term frequency, document frequency and term frequency - inverse document frequency values to prep the corpus for analysis. This webscraping script uses selenium, pandas, BeautifulSoup & MeCab (Japanese Morpholoical Analyzer).
 
-The yahoo answers website we will be scraping looks as such. Looping through the search terms, we will search the most relavent answers to each search term .
+The yahoo answers website we will be scraping looks as such. Looping through the search terms, we will search the most relavent answers to each search term. <br />
+<br />
 <img src="images/img_1.png" width="90%" height="90%">
 
 For each search term we will be collecting the url links for 10 pages worth of search results.
-<img src="images/img_2.png">
+<img src="images/img_2.png" width="90%" height="90%">
 
 Then we will be scraping each url for the best answer at the top of the page. 
-<img src="images/img_3.png">
+<img src="images/img_3.png" width="90%" height="90%">
 
 There are 4 scripts in this webscraping process.
 [To see the scripts & results please visit the github repository for this project.](https://github.com/haruka-takagi-datascience/yahoo_webscraper)
@@ -22,7 +23,7 @@ There are 4 scripts in this webscraping process.
 ### yahoo_webcrawl_1.py
 This script collects urls from yahoo answer page search. With a maximum of 300 urls per search term.
 This script outputs a dataframe of seed_word, rank, url and word_id.
-<img src="images/img_4.png">
+<img src="images/img_4.png" width="70%" height="70%">
 
 ### yahoo_webcrawl_2.py
 This script scrapes html files for saving from url list from yahoo_webcrawl_1.py
