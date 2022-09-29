@@ -25,7 +25,6 @@ There are 4 scripts in this webscraping process.
 ### yahoo_webcrawl_1.py
 This script collects urls from yahoo answer page search. With a maximum of 300 urls per search term.
 This script outputs a dataframe of seed_word, rank, url and word_id. <br />
-<br />
 <img src="images/img_4.png" width="45%" height="45%">
 
 ### yahoo_webcrawl_2.py
@@ -35,7 +34,6 @@ This script outputs a folder of saved html files.
 ### yahoo_webcrawl_3.py
 This script extracts the question and best answer from each html file.
 This script outputs url_df.csv with a new added text column showing the scraped text. <br />
-<br />
  <img src="images/img_5.png" width="100%" height="100%">
 
 ### yahoo_webcrawl_4.py
@@ -59,7 +57,6 @@ This csv contains the url, rank, original text and cleaned text of yahoo answer 
 - segmented_text : list of text segmented by sentence (CLEANED)
 - sequence_length : number of sentences in text (numerical)
 - segmented_text_joined : joined string of segmented_text (CLEANED)<br />
-<br />
 <img src="images/img_6.png">
  
 ### sequence_webcrawl_cleaned_df.csv
@@ -68,12 +65,10 @@ This csv ontains the url, rank, and cleaned sequence text of yahoo answer web se
 - rank : rank in yahoo search result
 - seq_sentence_n : nth sequence value
 - cleaned_segmented_text : cleaned text sequence by sentence <br />
-<br />
 <img src="images/img_7.png">
 
 ### nouns_list_all.txt
 List of all nouns in yahoo answer web search. (tokenized with Mecab) <br />
-<br />
 <img src="images/img_8.png">
 
 ### tf_by_seed_df.csv
@@ -82,7 +77,6 @@ This csv contains term frequency for all nouns by seed word.
 - tf_by_seed(セーフガード) : セーフガード term frequency by seed word
 - tf_by_seed(ウォリアーズ) : ウォリアーズ term frequency by seed word
 - continues of all nouns in noun list <br />
-<br />
 <img src="images/img_9.png">
 
 ### df_by_all.csv
@@ -90,7 +84,6 @@ This csv contains document frequency and inverse document frequency (idf) for al
 - words : all nouns in yahoo web search ( from nouns_list_all.txt)
 - document_frequency : number of appearances of nouns across all documents (documents = yahoo answers search results)
 - idf : inverse document frequency for all nouns across all documents (idf = log(N - n - 0.5)/(n + 0.5) for N = number of documents & n = df(noun) <br />
-<br />
 <img src="images/img_10.png" width="80%" height="80%">
 
 ### tf_idf_by_seed.csv
